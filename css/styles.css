@@ -20,6 +20,12 @@ header{
     font-family: 'Merriweather', sans-serif;
     text-align: center;
     padding-top: 200px;
-    padding-left: 200px;
+    padding-left: 300px;
     
+}
+.heading-info h3{
+    font-size: 32px;
+}
+.heading-info p{
+    font-size: 72px;
 }
