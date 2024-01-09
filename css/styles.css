@@ -3,62 +3,69 @@
     padding: 0;
     border: 0;
 }
-.container{
-    width:90%;
-    margin:0 auto;
-    
-}
-header{
-    margin-top: 50px;
+
+/*--------------------------------------------------------------------
+---------css for bannar-------------------------------------------
+*/
+.banner{
+    margin: 50px auto;
+    width: 83%;
+    max-width: 1320px;
     height: 550px;
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
    background: linear-gradient(rgba(141, 138, 138, 0.5), rgba(245, 189, 189, 0.5)), 
                         url('../images/Banner\ Image.png') center;
   background-repeat: no-repeat;
- 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
 /*format of linear gradient background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
                         url('background1.jpg') center/cover,
                         url('background2.jpg') center/cover; */
 }
-.heading-info{
-    width: 632px;
-    height: 246px;
-    color: white;
-    position: center;
-    font-family: 'Merriweather', sans-serif;
+
+.banner .content{
     text-align: center;
-    padding-top: 200px;
-    padding-left: 300px;
-    
+    color: white;
+    font-family: 'Merriweather',sans-serif;
 }
-.heading-info h3{
+
+    
+.banner h3{
     font-size: 32px;
 }
-.heading-info p{
+.banner p{
     font-size: 72px;
+    width:610px;
 }
+
+/* CSS for main start from here */
 .special-deal{
+    width: 83%;
+    max-width: 1320px;
+    margin: 100px auto;
     text-align: center;
     font-family: "Inter", sans-serif;
-    border: red solid 10px;
-    height 650px;
-    padding-top: 100px;
-    padding-left:200px;
-    display: block;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
     align-items: center;
 }
 .special-deal h2{
+    padding-bottom: 50px;
     font-weight: 700;
     font-size: 88px;
     color:#f00;
     
 }
+
 .special-deal p{
     font-size: 24px;
     font-weight: 500;
     color: #f00;
+}
+.special-deal img{
+    padding-top: 50px;
 }
 
 .special-deal h3{
@@ -71,15 +78,20 @@ header{
     line-height: normal;
 }
 .party-deal{
-    padding-top: 50px;
+    width: 83%;
+    max-width: 1320px;
     display: flex;
+    justify-content: space-around;
     background-image: url("../images/Vectorrr.png");
     background-repeat: no-repeat;
     height:500px;
 }
 .party-deal .party-info{
-    padding-top: 50px;
-    padding-left: 50px;
+    /* padding-top: 50px;
+    padding-left: 50px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .party-deal .welcome{
     width:642px;
@@ -95,11 +107,17 @@ header{
     color: #fff;
 }
 .party-deal .picture2024{
-    border: red solid 10px;
     padding-left: 200px;
     padding-top: 50px;
 }
+.party-deal button{
+    background-color:black;
+    color: wheat;
+    width: 100px;
+}
 .venue{
+    width: 83%;
+    max-width: 1320px;
     padding-top: 50px;
     height: 300px;
   /* background-image: linear-gradient(rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);*/
@@ -133,6 +151,8 @@ header{
 }
 
 .bestoffer{
+    width: 83%;
+    max-width: 1320px;
     display: flex;
     justify-content: space-around;
 }
@@ -187,6 +207,8 @@ header{
     line-height: 32px;
 }
 .holidaysale{
+    width: 83%;
+    max-width: 1320px;
     padding-top: 100px;
     display: block;
     align-items: center;
@@ -223,8 +245,48 @@ header{
     margin-left: 250px;
 }
 .discount50{
+    width: 83%;
+    max-width: 1320px;
+    
+    height:500px;
     display: flex;
-    height:400px;
+    
+}
+.discount50 .girl{
+    position:absolute;
+    height:500px;
+    width: 400px;
+    border: red solid 10px;
+    background-image: url("../images/Rectangle\ 1.png");
+}
+.discount50 .banner{
+    top:40px;
+    position: absolute;
+    width:1400px;
+    height:200px;
+    border: green solid 10px;
     background-image: url("../images/Rectangle\ 2.png");
-    background-position: bottom;
+}
+
+.bestgifts{
+    width: 83%;
+    max-width: 1320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bestgifts .images{
+    
+    display: flex;
+    flex-direction: column;
+    border-radius: 10%;
+    gap:16px;
+}
+.bestgifts .images .row{
+    display: flex;
+    flex-direction: row;
+    gap:16px;
+}
+.bestgifts .images :hover{
+    border: 1px solid #777;
 }
