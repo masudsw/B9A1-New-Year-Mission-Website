@@ -361,3 +361,39 @@
     font-weight: 400;
     line-height: normal;
 }
+
+footer{
+    padding:50px;
+    color:white;
+    background-color: #070211;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    ;
+}
+footer .text1 ,.text2{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer .icons{
+    
+    padding:200px;
+}
+footer .text1 .address{
+    padding: 30px;
+    
+    width: 350px;
+    height: 80px;
+}
+.phone ,.web{
+    display: flex;
+    justify-content: space-between;
+}
+footer button{
+    background-color: #070211;
+    color: #FFF;
+}
